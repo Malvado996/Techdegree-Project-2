@@ -1,0 +1,182 @@
+body {
+  background-color: rgb(209, 32, 23);
+  color: rgb(30, 9, 8);
+  font-family: 'Righteous'
+}
+
+h1 {
+  text-shadow: -3px 4px 3px rgb(109, 21, 16);
+  font-size: 55px;
+  color: rgb(231, 201, 44);
+}
+
+header li {
+  background-color: rgb(255, 46, 35);
+  margin: .25em;
+  padding: .4em;
+  border: 2px solid rgb(109, 21, 16);
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+footer {
+  border-top: 2px solid black;
+  position: relative;
+}
+
+#header, #portfolio, #contact, #skills {
+  text-align: center;
+}
+
+#porth2 {
+  font-size: 50px;
+  color: rgb(65, 250, 88);
+  text-shadow: -3px 4px 3px rgb(22, 89, 30);
+}
+
+#portfolio {
+  background-color: rgb(29, 163, 45);
+  border: 5px inset rgb(22, 89, 30);
+  border-radius: 5px;
+  margin: 0 -10px;
+  padding: 10px 0;
+}
+
+#contact {
+  font-family: Prompt;
+  border-top: 1px solid black;
+}
+
+#header {
+    border: 5px inset rgb(109, 21, 16);
+    border-radius: 5px;
+}
+
+.profile-pic {
+  margin-top: 15px;
+  max-width: 220px;
+  border-radius: 5px;
+  border: 3px solid rgb(109, 21, 16);
+}
+
+.card {
+  padding: 0 1em 0;
+}
+
+.card-image {
+  max-width: 220px;
+  border-radius: 5px;
+  border: 3px solid rgb(46, 211, 66);
+  box-shadow: -3px 6px 3px rgb(22, 89, 30);
+}
+
+.skills li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.btt {
+  position: absolute;
+  right: 15px;
+  bottom: .01px;
+  list-style-type: none;
+}
+
+.navfooter {
+  display: none;
+}
+
+/*==========================================================================
+MEDIA QUERY
+==========================================================================*/
+
+@media (min-width: 768px) {
+
+  header li {
+    display: inline-block;
+    width: 100px;
+  }
+
+  .profile-pic {
+    float: right;
+    margin: 5px 55px 50px 20px;
+    max-width: 280px;
+  }
+
+  .profile-para {
+    font-size: 25px;
+    max-width: 640px;
+    padding-left: 10px;
+  }
+
+  .card {
+    max-width: 45%;
+    display: inline-block;
+  }
+
+  .card-image {
+    max-width: 320px;
+  }
+
+  .skills li {
+    display: inline-block;
+    margin: auto;
+    width: 100px;
+  }
+
+  .btt {
+    display: none;
+  }
+
+  .navfooter {
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+  }
+
+  .navfooter  li {
+    display: inline-block;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  h1 {
+    font-size: 80px;
+    text-align: left;
+    margin-left: 40px;
+  }
+
+  header p {
+    font-size: 25px;
+  }
+
+  .nav {
+    position: absolute;
+    top: 180px;
+    right: 65px;
+  }
+
+  .profile-pic {
+    max-width: 500px;
+  }
+
+  .profile-para {
+    padding-top: 35px;
+  }
+
+  .card {
+    max-width: 30%;
+  }
+
+}
+
+/* CLEARFIX*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
