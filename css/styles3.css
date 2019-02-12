@@ -10,10 +10,14 @@ h1 {
   color: rgb(231, 201, 44);
 }
 
+nav ul {
+  padding-left: 0;
+}
+
 header li {
   background-color: rgb(255, 46, 35);
-  margin: .25em;
-  padding: .4em;
+
+
   border: 2px solid rgb(109, 21, 16);
   border-radius: 5px;
   list-style-type: none;
